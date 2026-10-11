@@ -234,13 +234,12 @@
     margin-top:4.5rem;
   }
   .ctx-item{
-    flex:1;
-    aspect-ratio:4/3;
+    flex:var(--ar, 1.5) 1 0%;
     overflow:hidden;
     position:relative;
   }
   .ctx-item img{
-    width:100%; height:100%; object-fit:cover;
+    width:100%; height:auto; display:block;
     filter:grayscale(30%) contrast(1.02);
     transition:filter 0.4s ease, transform 0.6s cubic-bezier(.16,1,.3,1);
   }
@@ -257,6 +256,7 @@
     .story.alt .story-detail.d1{ right:-6%; }
     .story.alt .story-detail.d2{ left:-6%; }
     .story-context{ flex-direction:column; }
+    .ctx-item{flex:none; }
   }
 
   /* ===== ABOUT ===== */
@@ -320,9 +320,9 @@
     <img src="Photos/_DSC6721.webp" alt="Misty river valley, wide landscape" />
   </div>
   <div class="hero-content">
-    <div class="hero-eyebrow exif">f/2.8 · 1/125 · ISO 400 — Reel 014</div>
+    <div class="hero-eyebrow exif">Street · Portrait · Studio</div>
     <h1>Light, held<br><em>still</em> for a moment.</h1>
-    <p class="hero-sub">Documentary and landscape photography by Marco Inzaghi — built on patience, film grain, and the hour before the light disappears.</p>
+    <p class="hero-sub">Street, portrait and studio photography by Marco Inzaghi — an engineer's curiosity for light and technique.</p>
   </div>
   <div class="scroll-cue">Scroll</div>
 </header>
@@ -340,42 +340,42 @@
     <div class="story-bg-tint"></div>
     <div class="story-inner">
       <div class="story-intro reveal">
-        <span class="exif">Reel 014 — Ridge Line, October</span>
-        <h3>The ridge waited for the light we almost missed.</h3>
-        <p>Four hours up, in the dark, on the promise of a clear sky. The clouds didn't break until the last twenty minutes — and then, all at once, the whole valley turned to copper.</p>
-        <p>This is the frame that made the climb worth it, and the quieter moments either side of it that most people never see.</p>
+        <span class="exif">Paris — Montmartre</span>
+        <h3>A historic car, and the streets of Montmartre that suit it.</h3>
+        <p>A street photoshoot in Paris, built around one historic car and the old streets of Montmartre. The idea was to photograph the car like a portrait subject, letting the architecture and the light around it tell its story.</p>
+        <p>This is the frame that came out of it, together with the close details and the other angles that show how the shot was built.</p>
       </div>
 
       <div class="story-visual reveal reveal-delay-1">
         <div class="story-main">
           <img src="Photos/ _DSC5322.webp" alt="Mountain ridge lit by golden morning light" loading="lazy" />
           <div class="main-tag">
-            <span class="title">Ridge Line, 6:14am</span>
-            <span class="exif">f/8 · 1/60 · ISO 100</span>
+            <span class="title">Montmartre, Paris</span>
+            <span class="exif">Street photography</span>
           </div>
         </div>
         <div class="story-detail d1">
           <img src="Photos/ _DSC5322c1.webp" alt="Close detail of rock texture on the ridge" loading="lazy" />
-          <span class="detail-tag exif">Detail — rock</span>
+          <span class="detail-tag exif">Detail</span>
         </div>
         <div class="story-detail d2">
           <img src="Photos/ _DSC5322c2.webp" alt="Close detail of frost on grass" loading="lazy" />
-          <span class="detail-tag exif">Detail — frost</span>
+          <span class="detail-tag exif">Close-up</span>
         </div>
       </div>
 
       <div class="story-context reveal reveal-delay-2">
-        <div class="ctx-item">
+        <div class="ctx-item" style="--ar:1.5;">
           <img src="Photos/ _DSC5323.webp" alt="Wide shot of the valley before sunrise" loading="lazy" />
-          <span class="ctx-tag exif">5:40am</span>
+          <span class="ctx-tag exif">Wider view</span>
         </div>
-        <div class="ctx-item">
+        <div class="ctx-item" style="--ar:1.5;">
           <img src="Photos/ _DSC5324.webp" alt="View from the trail looking back down" loading="lazy" />
-          <span class="ctx-tag exif">The climb</span>
+          <span class="ctx-tag exif">On location</span>
         </div>
-        <div class="ctx-item">
+        <div class="ctx-item"  style="--ar:1.5;">
           <img src="Photos/ _DSC5328.webp" alt="Different angle of the ridge from further along" loading="lazy" />
-          <span class="ctx-tag exif">6:20am</span>
+          <span class="ctx-tag exif">Another angle</span>
         </div>
       </div>
     </div>
@@ -387,42 +387,42 @@
     <div class="story-bg-tint"></div>
     <div class="story-inner">
       <div class="story-intro reveal">
-        <span class="exif">Reel 019 — Harbor Light, November</span>
-        <h3>Low tide, and a town still waking up.</h3>
-        <p>Fishing boats go out before anyone else is awake. I followed one crew for three mornings before the light, the tide, and the boat all lined up the way I'd pictured it.</p>
-        <p>What stayed with me wasn't the boat itself — it was the rope, the rust, the small worn details that only show up when you get close.</p>
+        <span class="exif">Amsterdam — Model photography</span>
+        <h3>Portfolios, built one shoot at a time.</h3>
+        <p>Amsterdam is full of young aspiring models and photographers, all trying to build something of their own. I spent many sessions in the city's iconic places, creating portfolios for models and sharing photography knowledge with other photographers.</p>
+        <p>Each shoot was as much about collaboration as photography — testing ideas together, and leaving everyone with images they're proud of.</p>
       </div>
 
       <div class="story-visual reveal reveal-delay-1">
         <div class="story-main">
           <img src="Photos/_DSC9091.webp" alt="Fishing boat on calm harbor water at dawn" loading="lazy" />
           <div class="main-tag">
-            <span class="title">Harbor Light, 5:52am</span>
-            <span class="exif">f/9 · 1/320 · ISO 200</span>
+            <span class="title">Amsterdam</span>
+            <span class="exif">Model photography</span>
           </div>
         </div>
         <div class="story-detail d1">
-          <img src="Photos/_DSC9091.webp" alt="Close detail of weathered rope on the boat" loading="lazy" />
-          <span class="detail-tag exif">Detail — rope</span>
+          <img src="Photos/_DSC9097.webp" alt="Close detail of weathered rope on the boat" loading="lazy" />
+          <span class="detail-tag exif">Detail</span>
         </div>
         <div class="story-detail d2">
-          <img src="Photos/_DSC9091.webp" alt="Close detail of peeling paint on the hull" loading="lazy" />
-          <span class="detail-tag exif">Detail — hull</span>
+          <img src="Photos/_DSC9142.webp" alt="Close detail of peeling paint on the hull" loading="lazy" />
+          <span class="detail-tag exif">Close-up</span>
         </div>
       </div>
 
       <div class="story-context reveal reveal-delay-2">
-        <div class="ctx-item">
-          <img src="Photos/_DSC9142.webp" alt="Boats lined up along the dock" loading="lazy" />
-          <span class="ctx-tag exif">The dock</span>
+        <div class="ctx-item" style="--ar:1.5;">
+          <img src="Photos/_DSC8312.webp" alt="Boats lined up along the dock" loading="lazy" />
+          <span class="ctx-tag exif">On location</span>
         </div>
-        <div class="ctx-item">
-          <img src="Photos/_DSC9097.webp" alt="Crew preparing nets before departure" loading="lazy" />
-          <span class="ctx-tag exif">5:15am</span>
+        <div class="ctx-item" style="--ar:1.5;">
+          <img src="Photos/_DSC8385.webp" alt="Crew preparing nets before departure" loading="lazy" />
+          <span class="ctx-tag exif">Another angle</span>
         </div>
-        <div class="ctx-item">
-          <img src="Photos/_DSC9150.webp" alt="Wider view of the harbor at sunrise" loading="lazy" />
-          <span class="ctx-tag exif">Wide view</span>
+        <div class="ctx-item" style="--ar:1.5;">
+          <img src="Photos/_DSC0619.webp" alt="Wider view of the harbor at sunrise" loading="lazy" />
+          <span class="ctx-tag exif">Wider view</span>
         </div>
       </div>
     </div>
@@ -435,42 +435,42 @@
     <div class="story-bg-tint"></div>
     <div class="story-inner">
       <div class="story-intro reveal">
-        <span class="exif">Reel 019 — Harbor Light, November</span>
-        <h3>Low tide, and a town still waking up.</h3>
-        <p>Fishing boats go out before anyone else is awake. I followed one crew for three mornings before the light, the tide, and the boat all lined up the way I'd pictured it.</p>
-        <p>What stayed with me wasn't the boat itself — it was the rope, the rust, the small worn details that only show up when you get close.</p>
+        <span class="exif">Indonesia — Ijen</span>
+        <h3>A sulfur miner above the crater.</h3>
+        <p>Travel photography in Indonesia. Among the landscapes, one scene stood out: a sulfur miner working over the volcano crater.</p>
+        <p>The main frame is a landscape that keeps the miner in the scale of the place, shown with the close details and wider angles that give it context.</p>
       </div>
 
       <div class="story-visual reveal reveal-delay-1">
         <div class="story-main">
           <img src="Photos/_DSC3417.webp" alt="Fishing boat on calm harbor water at dawn" loading="lazy" />
           <div class="main-tag">
-            <span class="title">Harbor Light, 5:52am</span>
-            <span class="exif">f/9 · 1/320 · ISO 200</span>
+            <span class="title">Sulfur miner, Indonesia</span>
+            <span class="exif">Travel photography</span>
           </div>
         </div>
         <div class="story-detail d1">
           <img src="Photos/_DSC3417c2.webp" alt="Close detail of weathered rope on the boat" loading="lazy" />
-          <span class="detail-tag exif">Detail — rope</span>
+          <span class="detail-tag exif">Detail</span>
         </div>
         <div class="story-detail d2">
           <img src="Photos/_DSC3417c1.webp" alt="Close detail of peeling paint on the hull" loading="lazy" />
-          <span class="detail-tag exif">Detail — hull</span>
+          <span class="detail-tag exif">Close-up</span>
         </div>
       </div>
 
       <div class="story-context reveal reveal-delay-2">
-        <div class="ctx-item">
+        <div class="ctx-item" style="--ar:0.667;">
           <img src="Photos/_DSC3354.webp" alt="Boats lined up along the dock" loading="lazy" />
-          <span class="ctx-tag exif">The dock</span>
+          <span class="ctx-tag exif">Wider view</span>
         </div>
-        <div class="ctx-item">
+        <div class="ctx-item" style="--ar:0.667;">
           <img src="Photos/_DSC3412.webp" alt="Crew preparing nets before departure" loading="lazy" />
-          <span class="ctx-tag exif">5:15am</span>
+          <span class="ctx-tag exif">On location</span>
         </div>
-        <div class="ctx-item">
+        <div class="ctx-item" style="--ar:0.667;">
           <img src="Photos/_DSC3416.webp" alt="Wider view of the harbor at sunrise" loading="lazy" />
-          <span class="ctx-tag exif">Wide view</span>
+          <span class="ctx-tag exif">Another angle</span>
         </div>
       </div>
     </div>
@@ -488,13 +488,12 @@
       <img src="Photos/ 20250803-_MG_9968.webp" alt="Portrait of Marco" />
     </div>
     <div>
-      <h2>Fifteen years chasing the hour before dark.</h2>
-      <p>Marco is a documentary and landscape photographer working primarily on medium-format film, based between the coast and the mountains. The work favors quiet, unhurried scenes — places and people caught in the light they'd choose for themselves.</p>
-      <p>Prints have been shown in group exhibitions across three countries, and clients include independent publishers, outdoor brands, and private collectors.</p>
+      <h2>An engineer's eye, fifteen years behind the camera.</h2>
+      <p>Marco is a mechanical engineer with a passion for photography that started young. Fifteen years on, the camera is still where he experiments — playing with techniques and light, always looking for the aesthetic that feels right.</p>
       <div class="stats">
         <div><div class="n">15+</div><div class="exif l">Years shooting</div></div>
-        <div><div class="n">40</div><div class="exif l">Countries</div></div>
-        <div><div class="n">12</div><div class="exif l">Exhibitions</div></div>
+        <div><div class="n">3</div><div class="exif l">Disciplines</div></div>
+        <div><div class="n">3</div><div class="exif l">Countries featured</div></div>
       </div>
     </div>
   </div>
@@ -503,13 +502,13 @@
 <section id="contact">
   <div class="contact">
     <h2>Have a story worth <em>slowing down</em> for?</h2>
-    <a class="contact-email" href="mailto:hello@marlowreyes.com">hello@marlowreyes.com</a>
+    <a class="contact-email" href="mailto:marco.inzaghi.it@gmail.com">marco.inzaghi.it@gmail.com</a>
   </div>
 </section>
 
 <footer>
   <div>© 2026 Marco Inzaghi</div>
-  <div>Based on the coast — available worldwide</div>
+  <div>Street · Studio · Portrait</div>
 </footer>
 
 <script>
